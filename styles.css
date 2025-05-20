@@ -1,0 +1,156 @@
+@font-face{
+  font-family: Norse-Bold;
+  src: url("Norse-Bold.otf") format("opentype");
+}
+
+body{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+button{
+  background-color: rgb(18, 77, 53);
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right:20px;
+  
+}
+
+div{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+img + div{
+  display: flex;
+  padding-top: 5%;
+  font-family: Norse-Bold, Arial;
+  font-size: 6em;
+  color: white;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  background-color: rgba(0,0, 0, .5);
+  
+  display: flex;
+  justify-content: center;
+}
+
+.title-image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 40vw;
+  height: 100vh;
+  border: 1px solid;
+  box-sizing: border-box;
+
+}
+
+.login-form{
+  display: flex;
+  width: 60vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  color: black;
+  
+  height: 35vh; 
+}
+
+.description > div{
+  padding: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+  
+}
+
+.description > .d-top{
+  padding-top: 100px;
+  padding-right: 100px;
+}
+
+
+.sign-in{
+  height: 30vh
+}
+
+.sign-in > div{
+  margin-left: 30px;
+}
+
+.si-title{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.si{
+  display: flex;
+}
+
+.si > div{
+  font-size: .7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 60px;
+
+}
+
+.si > div > input{
+  margin: 10px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 25vh;
+  border-radius: 5px;
+  border-color: rgb(240, 240, 240);
+}
+
+#password:invalid{
+  border-color: red;
+}
+#c-password:invalid{
+  border-color: red;
+}
+
+
+.log-in{
+  height: 35vh;
+  background-color: rgb(240, 240, 240);
+}
+
+.log-in > div{
+  padding: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(18, 77, 53);
+}

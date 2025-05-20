@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title-image">
+      <img src="christina-spiliotopoulou-fkPDVWHikIs-unsplash.jpg" alt="Title Image">
+      <div>ODIN</div>
+    </div>
+    <div class="login-form">
+      <form action="#" method="get">
+        <div class="description">
+          <div class="d-top">
+            This is not a real online service! You know you need something 
+            like this in your life to help you realize your deepst dreams. 
+            Sign up <i>now</i> to get started.
+          </div>
+          <div class="d-bottom">
+            You <em>know</em> you want to.
+          </div>
+        </div>
+        <div class="sign-in">
+          <div class="si-title">
+            Let's do this
+          </div>
+          <div class="si">
+              <div class="si-left">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name">
+
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="1 number, 1 uppercase, 1 lowercase, 
+                8+ or more characters"
+                required>
+              </div>
+              <div class="si-right">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name">
+
+                <label for="phone">PHONE NUMBER</label>
+                <input type="text" id="phone" name="phone"
+                  pattern="\d{9}" 
+                  placeholder="123456789"
+                  title="Must contain 9 digits"
+                  required
+                >
+
+                <label for="c-password">CONFIRM PASSWORD</label>
+                <input type="password" id="c-password" name="c-password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="1 number, 1 uppercase, 1 lowercase, 
+                8+ or more characters"
+                required>
+              </div>  
+          </div>
+          
+        </div>
+        <div class="log-in">
+          <button type="submit">Create Account</button>
+          <div>
+            Already have an account?
+            <a href="index.html">Log in</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  
+</body>
+</html>
